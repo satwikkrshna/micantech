@@ -1,0 +1,1622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Software Consulting and Development</title>
+	<link rel="shortcut icon" type="Final Template/png" href="favicon.png" >
+	<!-- External CSS -->
+	<link rel="stylesheet" href="./homestyles.css">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+	<link rel="stylesheet" href="https://z9q6w4g4.rocketcdn.me/wp-content/themes/micantech/css/bootstrap.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="top">
+        <h6>
+            <img width="15px" src="mail.png" alt="">info@micantech.net
+            <img width="15px" src="phn.png" alt="">302-703-0708
+        </h6>
+    
+
+    <div class="social-logos">
+        <a class="social-logo" href="https://www.facebook.com/www.micantech.net/">
+            <img src="fb.png" alt="Facebook" width="20" height="20">
+        </a>
+        <a class="social-logo" href="https://twitter.com/Mican_Tech">
+            <img src="twitter.png" alt="Twitter" width="20" height="20">
+        </a>
+        <a class="social-logo" href="https://www.instagram.com/Mican_Tech/m">
+            <img src="ig.png" alt="Instagram" width="20" height="20">
+        </a>
+        <a class="social-logo" href="https://www.linkedin.com/company/mican-technologies/">
+            <img src="in.png" alt="LinkedIn" width="20" height="20">
+        </a>
+    </div>
+</div>
+</body>
+
+
+	</head>
+</div>
+</html>
+	<!------------------------------------------------------------------------------styles------------------------------------------------------------------------------------------------>
+	<!-- sticky navbar styles & script -->
+	<script>
+		
+		window.addEventListener("scroll", function() {
+    var header = document.querySelector("header");
+
+    	var headerLinks = document.querySelectorAll("header ul li a");
+    var logoImage = document.getElementById("logo-image");
+
+    if (window.scrollY > 20) {
+        header.classList.add("sticky");
+         headerLinks.forEach(function(link) {
+
+        link.style.color = "black"; 
+        });
+    logoImage.src = "https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/09/MIcan-tech-blue.png"; // when scrolldown(not working)
+    }else {
+        header.classList.remove("sticky");
+        headerLinks.forEach(function(link) {
+            link.style.color = "white";
+        });
+        logoImage.src = "micanwhite.png"; 
+}
+});
+
+		
+
+
+	</script>
+		<script>
+			$(function () { 
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 500) { 
+						$('.logo img').attr('src','https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/09/MIcan-tech-blue.png');
+					}
+					if ($(this).scrollTop() < 500) { 
+						$('.logo img').attr('src','https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/09/MIcantech-white.png');
+					}
+				})
+			});
+		</script>
+	<style>
+header {
+    background-color: transparent;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    transition: background-color 0.3s ease;
+}
+
+header.sticky {
+    background-color: white;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 22px 0;
+    display: inline-block;
+    transition: all ease 0.1s;
+    font-size: 18px;
+    color: white;
+}
+
+header ul li a:hover {
+    color: white;
+}
+header ul li{
+display: inline-block;
+list-style: none;
+margin: 0 20px;
+
+}
+
+header ul li:last-child{
+margin-right: 0;
+}
+
+/* submenu style */
+header ul .submenu{
+	/* pointer-events: none; */
+position: absolute;
+width: 240px;
+
+padding-left: 5px;
+background-color: #ffffff;
+border-radius: 5%;
+box-shadow: 0 20px 45px #00000020;
+margin-top: -10px;
+opacity: 0;
+z-index: 1;
+transition: all ease 0.4s;
+}
+header ul li:hover .submenu{
+z-index:100;                        
+opacity: 1;
+margin-top: 0;
+}
+header ul .submenu li{
+
+margin: 0;
+width: 100%;
+} 
+header ul .submenu li a{
+	
+padding: 10px 17px 0px 8px;
+display: inline-block;
+width: 242px;
+height: 47px;
+}
+/* styles for company cards in our services (or) clients */
+.slides {
+            width: 100%;
+            margin: 0 auto;
+            padding: 25px;
+			left: -14px;
+			background-color: white;
+            border-radius: 8px;
+            /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+            position: relative;
+            overflow: ;
+        }
+        .slider {
+            display: flex;
+            /* overflow-x: scroll; */
+            scroll-behavior: smooth;
+            width: 100%;
+            border-radius: 2%;
+        }
+
+        .slider::-webkit-scrollbar {
+            width: 10px;
+        }
+        .slide {
+
+			/* min-width: 100%;!important
+			box-shadow: 0 0 10px 2px rgb(72 73 121 / 10%)!important;
+			border-radius: 4px;
+			background: #fff; */
+
+            flex: 0 0 auto;
+            width: 220px;
+            height: 95px;
+            margin-right: 50px;
+            border-radius: 1%;
+             /* box-shadow: 0 0 3px rgba(, 0, 0, 0.5);  */
+			 box-shadow: 0 0 6px 0px rgb(72 73 121 / 10%)!important;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 1%;
+			box-shadow: 0 0 10px 2px rgb(72 73 121 / 10%)!important;
+			border-radius: 4px;
+			background: #fff;
+			
+        }
+
+        .slider-controls {
+            position: absolute;
+            top: 38%;
+            transform: translateY(-80%);
+			transform: translateX(-2.7%);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+		.slider-controls button {
+    background-color: #185c99;
+    color: #fff;
+    border: none;
+    border-radius: 0%;
+    width: 35px;
+    height: 37px;
+    font-size: 20px;
+    cursor: pointer;
+    outline: ;
+    overflow: ;
+}
+		  /* our services styles */
+		  body {
+      background-color: white; 
+      margin: 0; 
+      padding: 0; 
+      font-family: Mulish, sans-serif; 
+    }
+	.bg-white12 {
+    background: #f0f6ff!important
+}
+    /* Container for the entire content */
+    .containeros {
+		background-color: white;
+      max-width: 1300px; 
+      margin: 0 auto; 
+      padding: 20px; 
+      overflow: hidden; 
+    }
+
+    /* Styling for the left side */
+    .left-side {
+      float: left;
+      
+      padding-left: 0px;
+	  padding-top: 70px;
+	  padding-bottom: 30px;
+    }
+
+    .left-title {
+      font-size: 24px;
+      font-weight: bold;
+      padding: 20px 0;
+	  padding-bottom: 2px;
+    }
+
+    .left-option {
+    display: flex;
+    align-items: center;
+    color: #777;
+    padding: 10px;
+    transition: background-color 0.3s;
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    padding-left: 10px;
+}
+    .left-option:hover {
+      background-color: #185c99; 
+      color: white;
+      cursor: pointer;
+
+    }
+#bpo:hover img{
+	content: url('https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2022/12/BPO1.png');
+}
+#csharp:hover img{
+	content: url('https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2022/12/c-sharp1.png');
+}
+#database:hover img{
+	content: url('https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2022/12/database1.png');
+}
+#dotnet:hover img{
+	content: url('https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2022/12/DotNet1.png');
+}
+#forgerock:hover img{
+	content: url('https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/04/Forgerock-2-1.png');
+}
+#hadoop:hover img{
+	content: url('https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2022/12/Hadoop1.png');
+}
+
+#java:hover img{
+	content: url('https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2022/12/java1.png');
+}
+#mapp:hover img{
+	content: url('https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/02/hybrid-mobile-development2.png');
+}
+#nodejs:hover img{
+	content: url('https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2022/12/nodejs1.png');
+}
+#okta:hover img{
+	content: url('https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/04/Okta-2-1.png');
+}
+#react:hover img{
+	content: url('https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2022/12/React1.png');
+}
+#sailpoint:hover img{
+	content: url('https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/04/sailPoint-2-1.png');
+}
+#sharepoint:hover img{
+	content: url('https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2022/12/sharepoint-1.png');
+}
+#staffaug:hover img{
+	content: url('https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/04/Staff-Augmentation-2-1.png');
+}
+#testing:hover img{
+	content: url('https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2022/12/testing-2-1.png');
+}
+
+    /* Styling for the right side */
+	.right-side {
+  float: right;
+  width: 66%;
+  height: 840px;
+  padding: 20px;
+  padding-top: 25px;
+  padding-left: 30px;
+  padding-bottom: 40px;
+  background-color: #185c99;
+  color: white;
+  border-radius: 10px;
+}
+
+.right-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.info {
+  margin-top: 10px;
+  font-size: 16.4px;
+}
+
+.small-container {
+	height: 126px;
+	width: 33.33%;
+  float: left;
+  width: calc(33.33% - 20px); 
+  margin-right: 20px;
+  background-color: white;
+  border-radius: 6.5%;
+  margin-bottom: 20px;
+  padding: 40px; 
+  box-sizing: border-box; 
+}
+
+		/* .colorchange{
+			background-color: white;
+		} */
+		.gap{ 
+			width: 100px;
+			height: 100px;
+		}
+.text p {
+    color: #fff;
+    font-size: 27px;
+    font-weight: 700;
+
+    padding-left: 0;
+    margin-bottom: 0;
+    line-height: 21px;
+}
+	
+
+        /* Style for the text on the left of the image */
+        .text {
+            position: absolute;
+            top: 50%;
+            left: 100px;
+			padding-left: 15%;
+          
+            color: white;
+        }
+
+     
+		.last{
+	background-color: #185c99;
+			background: cover;
+			height: 55px;
+			color: white;
+			color: white;
+			/* padding-top: 3px; */
+	padding-left: 155px;
+
+		}
+
+		.banner-card {
+    position: relative;
+    text-align: center;
+}
+
+.banner-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.banner-text h1 {
+    font-size: 50px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 800;
+    margin: 5px 0;
+	color: white;
+	padding-bottom: 10px;
+}
+
+.buttons {
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .banner-text h1 {
+        font-size: 30px; 
+    }
+    .btn {
+        font-size: 10px; 
+    }
+}
+.btn {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 16px;
+    margin: 5px;
+    display: inline-block;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 14px;
+    color: #185c99;
+	
+}
+.btn:hover{
+	color: #185c99; to not the change  the color when hovered along the know more and get started
+}
+
+	.top {
+		display: none; /* Initially hide the top section */
+	}
+
+.social-logos {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.social-logo {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+		body, h1, h2, h3, h4, h5, h6 , p , span, div, li, ul , button {
+			font-family: 'Mulish',sans-serif !important;
+		}
+		a,i,cite,em,var,address,dfn,ol,li,ul {
+			font-style: normal;
+			font-weight: 600;
+			text-decoration: none
+		}
+
+.container {
+            position: relative;
+            text-align: left;
+        }
+
+        .text {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            color: white;
+        }
+
+        .contact-button {
+			
+            background-color: white;
+            color: #185c99;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+		
+			
+            display: inline-block;
+			border-radius: 10px;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+
+        }
+        .contact-button:hover {
+            background-color: #185c99;
+            color: white;
+		}
+		html{
+			scroll-behavior: smooth;
+		}
+			.section{
+				width: 100%;
+				height: 300vh;
+				
+			}
+	
+			.fa-angle-up:before {
+    content: "\f106";
+	font-size: 20px;
+
+}
+
+.fa-angle-left:before {
+    content: "\f104";
+    font-size: 15px;
+    padding-left: 3px;
+}
+
+.fa-angle-right:before {
+    content: "\f105";
+    padding-left: 3px;
+    /* padding-right: 3px; */
+    font-size: 15px;
+}
+.gotopbtn {
+  position: fixed;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  bottom: 56px;
+  right: 52px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 35px; 
+  color: white;
+  font-size: 22px;
+  background: #185c99;
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+}
+/* Have A Project In Mind */
+.call-do-action-area.style-seven {
+			background: url(https://micantech.net/wp-content/uploads/2023/01/Bred-2.png);
+			background-position: center center;
+			background-size: cover;
+			background-repeat: no-repeat
+		}
+		.call-do-action-area.style-seven .row.margin-toppe10 {
+			background-position: center center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			padding: 60px 10px 80px;
+
+		}
+		.call-do-action-area.style-seven .call-do-action-title h2 {
+			font-size: 35px;
+			font-weight: 700;
+			color: #fff;
+			margin-bottom: 20px;
+			
+		}
+		.call-do-action-area.style-seven .call-do-content-text p {
+			color: #fff;
+			font-size: 27px;
+			font-weight: 700;
+			text-transform: capitalize;
+			padding-bottom: 0;
+			padding-left: 0%;
+			margin-bottom: 0;
+			line-height: 21px
+		}
+		.call-do-action-area.style-seven .call-do-button a {
+			background: #fff;
+			color: #185c99;
+			padding: 15px 34px;
+			border: 2px solid #fff;
+			float: right;
+			text-transform: uppercase;
+			font-weight: 700;
+			margin-right: 0
+		}
+		.call-do-action-area.style-seven .call-do-button {
+			margin-top: 0
+		}
+		.call-do-action-area.style-seven .call-do-button a:hover {
+			background: #185c99;
+			color: #fff
+		}
+		.call-do-content-text {
+			padding-top: 0
+		}
+		.call-do-content-text {
+			padding-top: 10px
+		}
+		.call-do-action-area.style-seven .call-do-content-text p {
+			line-height: 38px
+		}
+		.call-do-button {
+			margin-top: 55px
+		}
+		.call-do-button a {
+			background: #185c99;
+			color: #fff;
+			padding: 0px 0px;
+			border-radius: 10px;
+			transition: .5s;
+			font-size: 16px;
+			font-weight: 00;
+			display: inline-block;
+			text-decoration: none;
+		}
+		.call-do-button a:hover {
+			background: #185c99;
+			color: #fff
+		}
+
+		.span.call_demo {
+			font-size: 19px!important
+		}
+
+.down{
+	padding-top: 54%;
+	
+	padding-left: 1%;
+}
+
+
+/* Style for the whole footer area */
+.itexpert-footer-area {
+  background-color: #eff2f7;
+  color: #616161;
+  padding: 10px 0; 
+}
+.itexpert-footer-area.style-two {
+    padding: -33px 0 22px;
+}
+
+/* Style for the footer logo */
+.itexpert-footer-logo img {
+  max-width: 100%; 
+}
+
+/* Style for the footer content text */
+.itexpert-footer-content-text p {
+  font-size: 16px;
+  padding-top: 0px;
+  padding-right: 7px;
+}
+
+/* Style for the footer social icons */
+.itexpert-footer-social-address ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.itexpert-footer-social-address ul li {
+  display: inline;
+  margin-right: 10px;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+	text-align: justify;
+padding-top: 8px;
+padding-bottom: 0px;
+}
+.itexpert-footer-social-address ul li a {
+  color: #185c99;
+  font-size: 18px;
+}
+
+/* style for the quick links section */
+.footer-title h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.footer-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-menu ul li {
+  margin-bottom: 8px;
+}
+
+.footer-menu ul li a {
+  color: #616161;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Style for the Contact Info section */
+.footer-adderss p {
+  font-size: 15px;
+}
+
+.texttt {
+  text-decoration: none;
+  color: black;
+  
+  transition: color 0.3s ease;
+}
+
+/* Style for the mail address icon */
+.mailaddress {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.i.fa.fa-facebook{
+	background-color: #185c99;
+	border-radius: 5%;
+}
+
+.itexpert-footer-social-address ul li a i {
+    font-size: 15px;
+    margin-right: 10px;
+    transition: .5s;
+    color: #fff;
+    
+    width: 45px;
+    line-height: 45px;
+    background: #185c99;
+    text-align: center;
+    border-radius: 10px
+}
+
+.top h6{
+	color: white;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	padding-right: 865px;
+}
+
+.top h6 img{
+	margin: 0 5px;
+	max-width: 15px;
+	height: auto;
+}
+.smalltxt{
+	font-size: 20px;
+}
+
+.container #next,
+.container #prev {
+  position: absolute;
+  z-index: 100;
+  background: #185c99;
+  color: white;
+  font-weight: bold;
+  height: 35px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  width: 31px;
+  line-height: 33px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.container #next {
+  right: 65px;
+  top: -205px; 
+}							
+.container #prev {
+  left: 65px;
+  top: -210px; 
+}
+.container #nex,
+.container #pre {
+  position: absolute;
+  z-index: 100;
+  background: #185c99;
+  color: white;
+  font-weight: bold;
+  height: 35px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  width: 31px;
+  line-height: 33px;
+  font-size: 20px;
+  cursor: pointer;
+  top: -100px; /* Move the icon 100px up */
+}
+.container #nex {
+  right: 18px;
+  top: 25px;
+}
+.container #pre {
+  left: -1402px; 
+  top: 30px;
+}
+.logo{
+	padding-right: 365px;
+}
+
+
+::-webkit-scrollbar{
+	width: 5px;
+}
+::-webkit-scrollbar-track{
+
+	background: #eff2f7;
+
+}
+::-webkit-scrollbar-thumb{
+	background: #185c99;
+
+}
+::-webkit-scrollbar-thumb:hover{
+	background: #185c99;
+}
+
+
+.excited{
+	margin-bottom: 10px;
+}
+
+
+.russm{
+	padding-top: 30px;
+	padding-bottom: 0px;
+}
+
+.header-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 10;
+	margin: 0 auto;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1280px) {
+    header .logo {
+      padding-right: 0;
+    }
+  
+    header {
+      padding: 3px 20px; 
+    }
+  
+    header ul {
+      display: none; 
+      position: absolute;
+      top: 60px; 
+      right: 20px; 
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+  
+    header ul li {
+      display: block;
+      margin: 0;
+      padding: 10px 20px;
+    }
+  
+    .menu-toggle {
+      display: block; 
+      cursor: pointer;
+    }
+  
+   
+    .menu-toggle .bar {
+      width: 30px;
+      height: 3px;
+      background-color: #333;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+  
+
+    .menu-active .bar:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .menu-active .bar:nth-child(2) {
+      opacity: 0;
+    }
+    .menu-active .bar:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  
+    
+    .menu-toggle.active + header ul {
+      display: block;
+    }
+  }
+  
+
+
+
+@media screen and (max-width: 1200px) {
+  div.top {
+    display: none;
+  }
+}
+
+
+
+
+	</style>
+</head>
+<!--------------------------------------------------------------------------------------------dropdown 1---------------------------------------------------------------------------------------------------->
+<header>
+	<nav>
+	<div class="header-container">
+	<div class="logo">
+		<div class="col-log-4">
+			<div class="col-log-8">
+
+		<a href="home.html"><img  width="130px" src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/09/MIcan-tech-blue.png" alt=""></a>
+	</div>
+</div>
+	</div>
+	<nav>		
+		</label>
+		<ul>
+			<li><a href="home.html" >Home</a>
+			</li>
+			<li ><a href="#">About Us</a>
+				<ul style="margin-top: 20px;" class="submenu">
+					<li><a style="font-size: 16px;" href="overview.html">Overview </a></li>
+					<li><a style="font-size: 16px;" href="team.html">Team</a></li>
+				</ul>
+			</li>
+			<li><a href="services.html">Services</a>
+				<ul style="margin-top: 20px;" class="submenu">
+					<li><a style="font-size: 16px;" href="globaltech.html">Global Technology Solutions </a></li>
+				
+					<li><a style="font-size: 16px;"  href="identityam.html">Identity Access Management</a></li>
+					<li><a style="font-size: 16px;" href="staffaug.html">Staff Augmentation</a></li>
+			</ul>
+			<li><a href="clients.html">Clients</a>
+			</li>
+			<li><a href="#">Careers</a>
+				<ul style="margin-top: 20px;" class="submenu">
+					<li><a href="#">Hiring </a></li>
+					<li><a href="#">Referrals</a></li>
+			</ul>
+			<li><a href="#">Media</a>
+				<ul style="margin-top: 20px;" class="submenu">
+					<li><a href="news.html">News </a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+			</ul>
+			<li><a href="contact.html">Contact Us</a></li> 
+			<!-- <a href="https://micantech.net/search/"  target="_blank">
+				<img src="Screenshot 2023-10-06 125334.png">
+			  </a> -->
+		</ul>
+	</nav>
+</div>
+
+</div>
+
+<!-- 
+<div class="menu-toggle">
+	<div class="bar"></div>
+	<div class="bar"></div>
+	<div class="bar"></div>
+  </div> -->
+</nav>
+</header>
+	<section>
+	</section>
+	<a class="gotopbtn" href="#"> <i class="fa fa-angle-up "></i></a>
+	<div class="banner-card">
+		<img src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/05/Business-Transformation.jpg">
+		<div class="banner-text">
+			<h1>Your Partners in Creating Exceptional</h1>
+			<h1>Business Transformation</h1>
+			<div class="buttons">
+				<a href="services.html" class="btn">KNOW MORE</a>
+				<a href="services.html" class="btn">GET STARTED</a>
+			</div>
+		</div>
+	</div> 
+	<div class="dreamit-team-member-area style-two">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<div class="dreamit-section-title pb-30">
+						<div class="dreamit-section-main-title">
+							<h3 class="title-allheading text-center">What We Do</h3>
+						</div>
+						<div class="dreamit-section-bar mt-10"></div>
+						<p class="text-center sub-text">
+							We are a software consulting and development company<br>that helps businesses solve the complex and recurring problems of digital evolution
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="eael-call-to-action bg-lite">
+						<div class="logo-heading-container">
+							<img src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/01/Digital-Transformation.png" class="leftimag">
+							<h3 class="title">Digital <br>Transformation</h3>
+						</div>
+						<p style="color: #616161;"> Mican harnesses the power of technology and innovation to help companies digitally transform their businesses. Through our industry experience, technical expertise, and bespoke solutions, we have helped a variety of organizations customize their digital transformation strategies.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="eael-call-to-action bg-lite">
+						<div class="logo-heading-container">
+							<img src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/01/Custom-Software-Development.png" class="leftimag">
+							<h3 class="title">Custom Software<br> Development</h3>
+						</div>
+						<p style="color: #616161;"> In today's volatile business environment, custom software development can help you gain a competitive edge and enhance user experience to achieve business excellence. Support your business infrastructure with scalable software that improves key aspects of your business.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="eael-call-to-action bg-lite">
+						<div class="logo-heading-container">
+							<img src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/01/Scale-Your-Team.png" class="leftimag">
+							<h3 class="title">Scale Your <br>Team</h3>
+						</div>
+						<p style="color: #616161;"> Rapidly scale your team with dedicated experts who expand your team's knowledge and capabilities while accelerating time to market and improving quality. Mican has a stack of certified developers working together on various aspects of technology to meet evolving business needs.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+	</div>
+<br>
+	<!----------------------------------------------------------------------------- Trusted Software Development Company ----------------------------------------------------------------------------------------------->
+	<div class="dreamit-team-member-area style-two bg-white12">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="text-center imagformobile">
+						<img src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/10/TSD-Updated.png" alt="Trusted Software Development Company" class="trusteslogos" title="Trusted Software Development Company" draggable="false">
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="dreamit-section-title">
+						<div class="dreamit-section-main-title">
+							<h1 class="title-allheading">Trusted <br>Software Development Company</h1>
+						</div>
+						<div class="dreamit-section-bar mt-10 leftbottombar"></div>
+						<div class="dreamit-section-content-text">
+							<p style="color: #616161;" class="contentforloacal">
+								Committed to our customers' success through digital transformation, software consulting and development.
+								<br><br>			
+								As one of the leading IT development and consulting firms in the US and Indian markets, we have over 17 years of experience in delivering IT solutions on a global scale, harnessing the full potential of the latest disruptive technologies.<br><br>
+								At our company, we pride ourselves on delivering exceptional IT services tailored to our clients' unique requirements. Our unwavering dedication to finding the most effective solutions for our customers has established us as a premier software development and consulting services provider. A testament to the quality of our work and our commitment to client satisfaction, a significant portion of our business comes from repeat customers. By consistently exceeding expectations, we have gained the trust and respect of businesses in need of top-notch technology solutions, fostering long-lasting relationships with our valued clientele.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+	</div>
+	<!--------------------------------------------------------------------------------- Years of Experience ----------------------------------------------------------------------------------------------------------->
+	<div class="dreamit-counter-area style-three">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<div class="dreamit-single-counter">
+						<div class="dreamit-counter-text">
+							<h3 class="count"><span class="counter">17</span><span>+</span></h3>
+						</div>
+						<div class="dreamit-counter-title">
+							<h4>Years of Experience</h4>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-4 col-md-6">
+					<div class="dreamit-single-counter">
+						<div class="dreamit-counter-text">
+							<h3 class="count"><span class="counter">92</span><span>%</span></h3>
+						</div>
+						<div class="dreamit-counter-title">
+							<h4>Client Retention</h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="dreamit-single-counter">
+						<div class="dreamit-counter-text">
+							<h3 class="count"><span class="counter">34</span><span>K+</span></h3>
+						</div>
+						<div class="dreamit-counter-title">
+							<h4>Work Hours</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--------------------------------------------------------------------------------- Transforming Businesses Across Industries  ----------------------------------------------------------------------------->
+	<div class="dreamit-team-member-area style-two">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="dreamit-section-title">
+						<div class="dreamit-section-main-title">
+							<h3 class="title-allheading">Transforming Businesses   <br>Across Industries</h3>
+						</div>
+						<div class="dreamit-section-bar mt-10 leftbottombar"></div>
+						<div class="dreamit-section-content-text">
+							<p
+							 style=" margin-top: 20px; color: #616161;">
+								Developing industry leading scalable digital solutions for transformational customer experiences. <br><br>
+								Mican has extensive experience in various industries and has successfully catered to projects in various technologies and domains. Our team brings deep industry knowledge and an expert perspective to each client, delivering professionally qualified and business-centric solutions across a wide range of industries. With innovation and entrepreneurial dynamism, we serve businesses - from SMEs to MNCs, across industries resulting in high-quality solutions that add value to the company. We leverage the combined power of over 17 years of industry experience and development expertise to create definitive software solutions for your business. 
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="dreamit-section-title">
+						<div class="dreamit-section-content-text">
+							<div class="row px-0 mx-0">
+								<div class="col-lg-4 col-md-4 col-sm-12">
+									<div class="choose-us-single-box1">
+										<div class="choose-us-title">
+											<div class="overlap">
+												<img src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/01/Health.png" class="" alt="Healthcare" title="Healthcare">
+											</div>	
+											<h2 class="web_title">Healthcare</h2>	
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-12">
+									<div class="choose-us-single-box1">
+										<div class="choose-us-title">
+											<div class="overlap">
+												<img src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/01/Banking.png" class="" alt="Banking" title="Banking">
+											</div>	
+											<h2 class="web_title">Banking</h2>	
+										</div>
+									</div>							
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-12">
+									<div class="choose-us-single-box1">
+										<div class="choose-us-title">
+											<div class="overlap">
+												<img src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/01/E-Commerce.png" class="" alt="E-Commerce" title="E-Commerce">
+										</div>
+										<h2 class="web_title">E-Commerce</h2>	
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-12">
+								<div class="choose-us-single-box1">
+										<div class="choose-us-title">
+											<div class="overlap">
+											<img src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/01/Logistics.png" class="" alt="" title="Logistics">
+											</div>	
+											<h2 class="web_title">Logistics</h2>	
+									</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-12">
+									<div class="choose-us-single-box1">
+										<div class="choose-us-title">
+											<div class="overlap">
+												<img src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/01/Advertising-.png" class="" alt="Advertising" title="Advertising">
+											</div>	
+											<h2 class="web_title">Advertising</h2>	
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-12">
+									<div class="choose-us-single-box1">
+										<div class="choose-us-title">
+											<div class="overlap">
+												<img src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/01/Education.png" class="" alt="Education" title="Education">
+											</div>	
+											<h2 class="web_title">Education</h2>	
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+	</div>	
+<br>
+<br>
+	<div class="bg-white12">
+	<div class="container ">
+										<!-- Left Side -->
+										<div class="left-side">
+										  <div style="color: #185c99; font-weight: 800;" class="left-title">OUR SERVICES</div>
+										  <img src="picsblue.png">
+										  <p style="color: #616161;">
+											Cutting-edge solutions to meet varied business needs
+										</p>
+										<br>
+<div class="left-options">
+										  <div class="left-option" id="bpo"><img style="margin-right: 12px;"  width="25px"  src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2022/12/BPO.png">     BPO</div>
+										  <div class="left-option" id="csharp"><img style="margin-right: 12px;" width="25px" src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2022/12/c-sharp.png">      C#</div>
+										  <div class="left-option" id="database"><img style="margin-right: 12px;" width="25px" src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2022/12/database.png">      DATA BASE</div>
+										  <div class="left-option" id="dotnet"><img style="margin-right: 12px;" width="25px" src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2022/12/DotNet.png">       .NET</div>
+										  <div class="left-option" id="forgerock"><img style="margin-right: 12px;" width="25px" src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/04/Forgerock-1-1.png">  FORGEROCK</div>
+										  <div class="left-option" id="hadoop"><img style="margin-right: 12px;" width="25px" src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2022/12/Hadoop.png">       HADOOP</div>
+										  <div class="left-option" id="java"><img style="margin-right: 12px;" width="25px" src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2022/12/java.png">       JAVA</div>
+										  <div class="left-option"id="mapp"><img style="margin-right: 12px;" width="25px" src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/02/hybrid-mobile-development-1.png">      MOBILE APPLICATION</div>
+										  <div class="left-option"id="nodejs"><img style="margin-right: 12px;" width="25px" src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2022/12/nodejs.png">      NODE.JS</div>
+										  <div class="left-option"id="okta"><img style="margin-right: 12px;" width="25px" src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/04/Okta-1-1.png">      OKTA</div>
+										  <div class="left-option"id="react"><img style="margin-right: 12px;" width="25px" src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2022/12/React.png">      REACT</div>
+										  <div class="left-option"id="sailpoint"><img style="margin-right: 12px;" width="25px" src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/04/sailPoint-1-1.png">      SAILPOINT</div>
+										  <div class="left-option"id="sharepoint"><img style="margin-right: 12px;" width="25px" src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2022/12/sharepoint.png">      SHAREPOINT</div>
+										  <div class="left-option"id="staffaug"><img style="margin-right: 12px;" width="25px" src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/04/Staff-Augmentation-1-1.png">      STAFF AUGMENTATION</div>
+										  <div class="left-option"id="testing"><img style="margin-right: 12px;" width="25px" src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2022/12/testing-1.png">      TESTING</div>
+										</div>
+									</div>
+									<br>	
+									<br>
+									<br>
+									<br>
+										<!-- Right Side -->
+										<div class="right-side">
+											
+										  <div class="right-title">BPO</div>
+										  <div class="info">In today's fast-paced business environment, companies face numerous challenges t remain competitive and one of the most significant challenges is the need to reduce costs while maintaining high levels of efficiency and productivity. This can be hindrance for many organisations, particularly those running with limited resources. Economical business process outsourcing solutions from Mican can help you streamline your operations, reduce overhead, and improve performance. </div>
+								<br>
+										  <!-- Small Containers -->
+										  <div style="color: black; ; font-family: Mulish, sans-serif;font-weight: bold;text-align: center;" class="small-container">Software Development</div>
+										  <div style="color: black; ; font-family: Mulish, sans-serif;font-weight: bold;text-align: center;" class="small-container">Technical <br> support</div>
+										  <div style="color: black; ; font-family: Mulish, sans-serif;    font-weight: bold;text-align: center;" class="small-container">Database <br> Administration</div>
+										  <div style="color: black; ; font-family: Mulish, sans-serif;font-weight: bold;text-align: center;" class="small-container">Data<br> Management</div>
+										  <div style="color: black; ; font-family: Mulish, sans-serif;font-weight: bold;text-align: center;" class="small-container">Project<br> Management</div>
+										  <div style="color: black; ; font-family: Mulish, sans-serif;font-weight: bold; text-align: center;" class="small-container">IT <br>
+											Consulting
+										<br>
+										<br>
+									</div>
+									<br>
+									<br>	
+									<br>
+									<br>
+									<br>
+									<div class="down" style="color: white;" class="left-option">Explore More</div>
+										</div>
+										<div style="clear:both;"></div> 
+									  </div>
+									  <br><br><br>
+									  <br>
+										<div style="clear:both;"></div> 
+									  </div>
+											</div>
+										</div>
+										</div>
+									</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+<!------------------------------------------------------------------------------------------ Have A Project ? --------------------------------------------------------------------------------------------------------->
+<div class="call-do-action-area style-seven calactionabout">
+	<div class="container">
+		<div class="row margin-toppe10 align-items-center">
+			<div class="col-lg-9 col-md-8">
+				<div class="dreamit-call-do-action-content">
+					<div class="call-do-content-text">
+						<p>Need Help?<br><span class="call_demo">Just Reach Out To Us.
+							<br>
+							<span class="smalltxt">All Our Business Relationships Have Started With ‘Hello’</span>
+						</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4">
+				<div class="call-do-button">
+					<a href="contact.html">ContactUs</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="dreamit-team-member-area style-two bg-white12">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12">
+				<div class="dreamit-section-title pb-30">
+					<div class="dreamit-section-main-title">
+						<h3 style="margin-bottom: 0px;" class="title-allheading text-center">CLIENT TESTIMONIALS</h3>
+					</div>
+					<p class="text-center sub-text">
+						<div class="dreamit-section-bar mt-10"></div>
+						<p style="color: #616161;" class="text-center sub-text">What our clients are saying about their experience with us.</p>
+					</div>
+				</div>
+				<div  style="padding:0px; color: #616161;   width: 1300px;  padding-left: 210px; padding-right: 215px; margin: auto; background: #f0f6ff; box-shadow: 0 0 10px 2px rgb(72 73 121 / 10%); margin-bottom:28px; text-align: justify; background:#fff;padding-bottom: 25px; border-radius: 10px;">
+				<br><div class="russm">	<h3 style="text-align: center;height: 40px; line-height: 24.5px;  color: #616161; padding-top: 10px; font-size: 20px;font-weight: 600; font-family: sans-serif;"> Russ M</h3></div>
+					<p style="margin-bottom: 0px;"></p>We  would like to recommend Mican Technologies for any organization looking to hire Finance and Accounting resources. They have proven time and again that they are up to the task by sending only qualified, professional individuals for consideration. After consulting with their sales team and giving them a clear picture of our pain points, they came up with a strategy for filling our immediate and long-term staffing needs. Working through the annual audit process and the ebb and flow of our fiscal calendar, we could not be more pleased with the ability to count on Mican to supply Finance resources quickly!</p>
+				
+				</div> 
+				<br>
+		<br>
+		<div class="container">
+			<div id="next"><i class="fas fa-angle-right"></i></div>
+			<div id="prev"><i class="fas fa-angle-left"></i></div>
+		  </div>
+		  </div>
+	</div>	
+	<br>
+	<br>
+	<br>
+</div>
+<!---------------------------------------------------------------------------------------- STRATEGIC PARTNERS -------------------------------------------------------------------------------------------------------->
+<div style="background-color: white;  padding: 90px 0 80px; padding-bottom: 65px!important;">
+	<div>
+		<div class="dreamit-section-title">
+			<div class="dreamit-section-main-title">
+				<h3 class="title-allheading text-center">STRATEGIC PARTNERS</h3>
+			</div>
+			<div class="dreamit-section-bar mt-10"></div>
+				<p style="color: #616161;" class="text-center sub-text mb-0">Mican currently works with industry leaders and enjoys a long-standing and mutually-beneficial relationship with several Fortune 500 organizations.</p>
+				<br>
+			</div>
+		</div>
+		<div class="container slides">
+			<div class="slider">
+				<div class="slide">
+					<img  src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/04/K-force--300x131.png" alt="Logo 1">
+				</div>
+				<div class="slide">
+					<img  src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/04/hexaware-1-300x132.png" alt="Logo 2">
+				</div>
+				<div class="slide">
+					<img  src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/04/experis-300x132.png" alt="Logo 3">
+				</div>
+				<div class="slide">
+					<img  src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/04/disys-1-300x132.png" alt="Logo 4">
+				</div>
+				<div class="slide">
+					<img  src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/04/collabera-1-300x132.png" alt="Logo 5">
+				</div>
+				<!-- <div class="slide">
+					<img  src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/04/ciber-1-300x132.png" alt="Logo 6">
+				</div>
+				<div class="slide">
+					<img  src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/04/capgemini-1-300x132.png" alt="Logo 7">
+				</div>
+				<div class="slide">
+					<img  src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/04/Cai-1-300x132.png" alt="Logo 8">
+				</div>
+				<div class="slide">
+					<img  src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/04/birlasoft-1-300x132.png" alt="Logo 9">
+				</div>
+				<div class="slide">
+					<img  src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/04/Artboard-4-300x131.png" alt="Logo 10">
+				</div>
+				<div class="slide">
+					<img  src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/04/Apex-systems--300x131.png" alt="Logo 11">
+				</div>
+				<div class="slide">
+					<img  src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/04/tek-systems-300x131.png" alt="Logo 12">
+				</div>
+				<div class="slide">
+					<img  src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/04/open-systems-technologies-300x131.png" alt="Logo 13">
+				</div>
+				<div class="slide">
+					<img  src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/04/Ntt-data-300x131.png" alt="Logo 14">
+				</div>
+				<div class="slide">
+					<img  src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/04/ness-1-300x131.png" alt="Logo 15">
+				</div>
+				<div class="slide">
+					<img  src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/04/modis-1-300x131.png" alt="Logo 16">
+				</div>
+				<div class="slide">
+					<img  src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/04/magnit-1-300x132.png" alt="Logo 17">
+				</div>
+			</div> -->
+			<div class="container">
+				<div id="nex"><i class="fas fa-angle-right"></i></div>
+				<div id="pre"><i class="fas fa-angle-left"></i></div>
+			  </div>
+			<!-- <div class="slider-controls">
+				<button id="prev-slide">;</button>
+				<button id="next-slide">;</button>
+			</div> -->
+		</div>
+	</div>
+</div>
+		<!-- <div class="flex-container footer">
+			<div class="flex-box">
+				<img  width="150px"    src="mican.png" alt="Mican Technologies, Inc. Logo">
+				<p>Mican Technologies, Inc. is a globally trusted IT services company with over 17 years of experience. We leverage new technologies to transform businesses for a digital future. From start-ups to Fortune 500 companies, we provide IT consulting and custom software development services to clients across various verticals.</p>
+			</div>
+	
+			<div class="flex-box">
+				<h5 class="quick-links">Quick Links</h5>
+			<p> Overview</p>
+			<p>BPO</p>
+			<p>C#</p>
+			<p>.NET</p>
+			<p>Database</p>
+			<p> Hadoop</p>
+			<p>IAM</p>
+			<p>Java</p>
+			<p>Mobile Application</p>
+			</div>
+			<div class="flex-box">
+				<h5 class="contact-info">Contact Info</h5>
+				<br>
+				<h5>Head Office - Delaware</h5>
+				<p>Mican Technologies Inc</p>
+				<p>2500 Wrangle Hill Road</p>
+				<p>Suite # 224</p>
+				<p>Bear DE 19701</p>
+				<h5>Phone: </h5>
+				<p>302-703-0708</p>
+				<h5>FAX: </h5>
+				<p>302-703-0709</p>
+				<p>Email: info@micantech.net</p>
+			</div>
+			<div class="flex-box">
+				<br>
+				<br>
+				<h5>Branch Office</h5>
+				<p>4600 Touchton Road East</p>
+				<p>Building 100</p>
+				<p>Suite # 260</p>
+				<p>Jacksonville FL 32246</p>
+				<h5>Phone: </h5>
+				<p>302-703-0708</p>
+				<h5>FAX: </h5>
+				<p>302-703-0709</p>
+				<p>Email: info@micantech.net</p>
+			</div>
+		</div>
+									</div>
+									</div>
+									</div>
+									</div>
+								</div>
+							</div>
+				</div>
+					</div>
+				</div>
+			</div> -->
+			<div class="itexpert-footer-area style-two">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4">
+							<div class="itexpert-middle-content mb-30">
+								<div class="itexpert-footer-logo">
+									<br>
+									<br>
+									<br>
+									<img width="150px" src="https://z9q6w4g4.rocketcdn.me/wp-content/uploads/2023/09/MIcan-tech-blue.png" alt="Mican Logo" title="Mican Logo">
+								</div>
+								<div class="itexpert-footer-content-text">
+									<p> Mican Technologies, Inc. is a globally trusted IT services company with over 17 years of experience. We leverage new technologies to transform businesses for a digital future. From start-ups to Fortune 500 companies, we provide IT consulting and custom software development services to clients across various verticals.</p>
+								</div>
+								<div class="footer-adderss">
+									<div class="itexpert-footer-social-address float-start ml-0">
+									  <ul class="mx-0">
+										<li><a href="https://www.facebook.com/www.micantech.net/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="https://twitter.com/Mican_Tech" target="_blank"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="https://www.instagram.com/Mican_Tech" target="_blank"><i class="fa fa-instagram"></i></a></li>
+										<li><a href="https://www.linkedin.com/company/mican-technologies/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+									  </ul>
+									</div>
+								  </div>
+							</div>	
+						</div>
+						<div class="col-lg-2 col-md-6">
+				<div class="itexpert-footer-content style-two">
+								<div	 class="footer-title">
+									<h2>Quick Links</h2>
+							</div>
+							<br>
+								<div  class="footer-menu">
+									<ul style="font-weight: 200;">
+										<span class="excited"> 
+											<li style="margin-bottom: 5px;color: #616161;">Overview</li>
+											<li style="margin-bottom: 5px;color: #616161;">BPO</li>
+											<li style="margin-bottom: 5px;color: #616161;">C#</li>
+											<li style="margin-bottom: 5px;color: #616161;">.NET</li>
+											<li style="margin-bottom: 5px;color: #616161;">Database</li>
+											<li style="margin-bottom: 5px;color: #616161;">Hadoop</li>
+											<li style="margin-bottom: 5px;color: #616161;">IAM</li>
+											<li style="margin-bottom: 5px;color: #616161;">Java</li>
+											<li style="margin-bottom: 5px;color: #616161;">Mobile Application</li>
+											<li style="margin-bottom: 5px;color: #616161;">Node.js</li>
+											<li style="margin-bottom: 5px;color: #616161;">React</li>
+											<li style="margin-bottom: 5px;color: #616161;">SharePoint</li>
+											<li style="margin-bottom: 5px;color: #616161;">Staff Augmentation</li>
+											<li style="margin-bottom: 5px;color: #616161;">Testing</li>
+										</span>
+									</ul>
+							</div>
+							</div>
+						</div>	
+						<div class="col-lg-3 col-md-6">
+							<div class="itexpert-footer-content style-two">
+								<div class="footer-title">
+									<h2>Contact Info</h2>
+								</div>
+								<br>
+								<div class="footer-adderss">
+									<p><b style="color: black;"> Head Office - Delaware </b><br>
+										<span> 
+			Mican Technologies Inc <br>
+		2500 Wrangle Hill Road <br>
+		Suite # 224 <br>
+		Bear DE 19701 <br>								
+		</span></p>
+									<p><b style="color: black;"> Phone: </b><span> <br> <a style="color: #616161;" href="" class="texttt">302-703-0708</a></span>
+									</p> 
+									<p><b style="color: black;"> FAX: </b><span> <br><a style="color: #616161;" href="" class="texttt">302-703-0709 </a></span>
+									</p> 
+									<p><b style="color: black;"> Email: </b><span><br> <a style="color: #616161; font-weight: bold;" href="" class="texttt">info@micantech.net<alt="" title="Mail" class="mailaddress"></a></span></p> 
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="itexpert-footer-content style-two mt-65">
+								<div class="footer-title">
+									<h2></h2>
+
+</div>
+								<div class="footer-adderss">
+									<br>
+									<br>
+									<p><b style="color: black;"> Branch Office - Florida </b><br>
+		<span>
+		4600 Touchton Road East<br>
+		Building 100<br>
+		Suite # 260<br>
+		Jacksonville FL 32246<br>								
+		</span></p>
+									<p><b style="color: black;"> Phone: </b><span> <br><a style="color: #616161;" href="" class="texttt"> 904-267-0909</a></span>
+									</p> 
+									<p><b style="color: black;"> FAX: </b><span> <br><a style="color: #616161;" href="" class="texttt"> 904-267-0908</a></span>
+									</p> 
+									<p><b style="color: black;"> Email: </b><span><br><a style="color: #616161; font-weight: bold;" href="" class="texttt">info@micantech.net<alt="Mail" title="info@micantech.net" class="mailaddress"></a></span></p> 
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+				</div>
+				</div>
+				</div>
+				</div>
+			</div>
+			<div class="last">
+			<div class="last" style="font-size: 14px;">
+				<p style="padding-top: 15px;"> Copyright © 2023 Mican Technologies Inc. All rights reserved.</p>
+			</div>
+			</div>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+	<!-- Bootstrap JS -->
+	<script defer="" src="https://z9q6w4g4.rocketcdn.me/wp-content/themes/micantech/js/bootstrap.min.js" data-rocket-status="executed"></script>
+	<script src="script.js"></script>
+
+
+<!-- -->
+<!-- <script>
+	document.querySelector(".menu-toggle").addEventListener("click", function () {
+	  this.classList.toggle("active");
+	  
+	  const menu = document.querySelector("header ul");
+	  if (menu.style.display === "block") {
+		menu.style.display = "none";
+	  } else {
+		menu.style.display = "block";
+	  }
+	});
+  </script> -->
+</body>
+</html>
